@@ -44,7 +44,7 @@ function verificador() {
             }
             else if (idade < 60 && idade >= 21) {
                 genero = 'um adulto'
-                img.setAttribute('src', 'fraco2.jpg')
+                img.setAttribute('src', 'fraco.jpg')
             }
             else if ( idade < 21 && idade > 12) {
                 genero = 'um jovem'
