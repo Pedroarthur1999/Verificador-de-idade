@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'fonte';
+    src: url(_fonts/computer-font.ttf);
+}
+body {
+    background-image: url('_images/relogio.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+}
+header {
+    text-align: center;
+}
+header h1 {
+    font-family:'fonte';
+    font-size: 3.4rem;
+    color: rgb(4, 0, 255);
+    -webkit-text-stroke-width: 0.001px;
+    -webkit-text-stroke-color: rgb(253, 253, 253);
+}
+section {
+    padding: 10px;
+    background-color: white;
+    width: 350px;        
+    text-align: center;
+    border-radius: 10px;
+}
+section input {
+    padding: 4px;
+}
+input#men {
+    accent-color: rgb(29, 0, 134)
+}
+input#fem {
+    accent-color: rgb(245, 2, 245);
+}
+
+div p {
+    margin: 15px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(24, 24, 24, 0.39);
+    justify-content: center;
+}
+footer {
+    font-size: 1.3rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}

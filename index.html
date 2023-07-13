@@ -6,99 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Verificador de idade</title>
 </head>
 <style>
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
-    @font-face {
-        font-family: 'fonte';
-        src: url(computer-font.ttf);
-    }
-    body {
-        margin-top: 50px;
-        background-image: url('relogio.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        background-size: cover;
-    }
-    header {
-        text-align: center;
-    }
-    header h1 {
-        font-family:'fonte';
-        font-size: 40pt;
-        color: rgb(4, 0, 255);
-        -webkit-text-stroke-width: 0.001px;
-        -webkit-text-stroke-color: rgb(253, 253, 253);
-    }
-    section {
-        padding: 10px;
-        background-color: white;
-        width: 350px;
-        margin: auto;
-        text-align: center;
-        border-radius: 10px;
-    }
-    section input {
-        padding: 4px;
-    }
-    input#men {
-        accent-color: rgb(29, 0, 134)
-    }
-    input#fem {
-        accent-color: rgb(245, 2, 245);
-    }
-    div {
-        margin: 10px;
-    }
-    div p {
-        margin: 15px;
-    }
-
-    footer {
-        font-size: 16pt;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        background-color: black;
-        text-align: center;
-        color: white;
-        padding: 5px;
-    }
+   
 </style>
-<header>
-    <h1>Verificador de idade</h1>
-</header>
 <body>
-    <section>
-
-        <!--Tag input-->
-
-        <div>
-            <p>
-                Ano de nascimento: <input type="number" name="txt_ano" id="ano" min="1930" max="2020"
-                    placeholder=" Ex:1999">
-            </p>
-            <p>
-                Sexo: <input type="radio" name="radsex" id="men" checked>
-                <label for="men">Masculino &nbsp;</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="woman">Feminino</label>
-            </p>
-            <p><input type="button" value="Verificar" onclick="verificador()"></p>
-        </div>
-        <div id="res">
-            <p>Resultado: </p>
-
-
-
-        </div>
-
-    </section>
+    <div class="container">
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+        <section>
+            <!--Tag input-->
+            <div>
+                <p>
+                    Ano de nascimento: <input type="number" name="txt_ano" id="ano" min="1930" max="2020"
+                        placeholder=" Ex:1999">
+                </p>
+                <p>
+                    Sexo: <input type="radio" name="radsex" id="men" checked>
+                    <label for="men">Masculino &nbsp;</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="woman">Feminino</label>
+                </p>
+                <p><input type="button" value="Verificar" onclick="verificador()"></p>
+            </div>
+            <div id="res">
+                <p>Resultado: </p>
+            </div>
+        </section>
+    </div>
     <footer>
 
         <p>
