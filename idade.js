@@ -22,37 +22,37 @@ function verificador() {
         if (sexo.checked) {
             if (idade > 60) {
                 genero = 'uma idosa'
-                img.setAttribute('src', 'idosa.jpg')
+                img.setAttribute('src', '_images/idosa.jpg')
             }
             else if (idade <= 60 && idade >= 21) {
                 genero = 'uma adulta'
-                img.setAttribute('src', 'adulta.jpg')
+                img.setAttribute('src', '_images/adulta.jpg')
             }
             else if (idade > 14 && idade < 21) {
                 genero = 'uma jovem'
-                img.setAttribute('src', 'jovemf.jpg')
+                img.setAttribute('src', '_images/jovemf.jpg')
             }
             else if (idade < 14) {
                 genero = 'uma criança'
-                img.setAttribute('src', 'criancaf.jpg')
+                img.setAttribute('src', '_images/criancaf.jpg')
             }
         }
         if (!(sexo.checked)) {
             if (idade >= 60) {
                 genero = 'um idoso'
-                img.setAttribute('src', 'idoso.jpg')
+                img.setAttribute('src', '_images/idoso.jpg')
             }
             else if (idade < 60 && idade >= 21) {
                 genero = 'um adulto'
-                img.setAttribute('src', 'fraco.jpg')
+                img.setAttribute('src', '_images/fraco.jpg')
             }
             else if ( idade < 21 && idade > 12) {
                 genero = 'um jovem'
-                img.setAttribute('src', 'jovemm.jpg')
+                img.setAttribute('src', '_images/jovemm.jpg')
             }
             else if ( idade <= 12 ) {
                 genero = 'uma criança'
-                img.setAttribute('src', 'criancam.jpg')
+                img.setAttribute('src', '_images/criancam.jpg')
             }
         }
         res.innerHTML = `Você é ${genero} de ${idade} anos`

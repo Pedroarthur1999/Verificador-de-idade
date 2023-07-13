@@ -12,6 +12,9 @@ body {
     background-size: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-size: cover;
+    background-origin: content-box;
+    width: 100vw;
+    height: 100vh;
 }
 header {
     text-align: center;
